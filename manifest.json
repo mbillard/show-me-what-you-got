@@ -1,0 +1,33 @@
+{
+  "manifest_version": 2,
+
+  "name": "Show me what you got",
+  "description": "Adds link to make looking at the top posts on reddit faster",
+  "version": "0.1",
+
+  "icons": {
+    "16": "icon-16.png",
+    "48": "icon-48.png",
+    "128": "icon-128.png"
+  },
+
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.reddit.com/r/*"],
+      "js": [
+        "subreddit_top_all_time.js",
+        "reddit_open_all_links.js"
+      ]
+    }
+  ],
+
+  "permissions": [
+    "tabs"
+  ]
+}
