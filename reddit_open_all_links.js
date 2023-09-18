@@ -35,4 +35,4 @@ linksContainer.appendChild(document.createTextNode(" "));
 linksContainer.appendChild(openLinksAndCommentsLink);
 
 var mainContent = document.querySelector(".content[role=main]");
-mainContent.appendChild(linksContainer);
+mainContent.prepend(linksContainer);
