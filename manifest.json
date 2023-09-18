@@ -19,7 +19,7 @@
 
   "content_scripts": [
     {
-      "matches": ["*://*.reddit.com/r/*"],
+      "matches": ["*://*.reddit.com/*"],
       "js": [
         "subreddit_top_all_time.js",
         "reddit_open_all_links.js"
